@@ -24,7 +24,7 @@ public class User {
     @NotBlank
     private String password;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "username")
     private List<Recipe> recipes = new ArrayList<>();
 
     @Column(name = "role")

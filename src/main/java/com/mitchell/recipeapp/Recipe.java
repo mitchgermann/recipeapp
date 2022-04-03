@@ -39,7 +39,7 @@ public class Recipe {
     private LocalDateTime date;
 
     @ManyToOne
-    @JoinColumn(name = "user", referencedColumnName = "username")
+    @JoinColumn(name = "userpojo", referencedColumnName = "username")
     @JsonIgnore
     private User user;
 
